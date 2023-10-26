@@ -1,0 +1,34 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0px;
+}
+.row::after{
+	content:"";
+	display:block;
+}
+
+.col{
+	border:solid 1px black;
+	float:left;
+	height:200px;
+	padding:20px;
+}
+
+@media(max-width:480px){
+	.col{
+		width:100%;
+	}
+}
+	
+@media(max-width:960px){
+	.col{
+	width:50%;
+	}
+}
+@media(min-width:960px;
+	.col{
+		width:33.33%;
+	}
+}
